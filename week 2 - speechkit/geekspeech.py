@@ -6,6 +6,9 @@ import uuid
 import time
 import pyaudio
 import wave
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 YANDEX_ASR_HOST = 'asr.yandex.net'
 YANDEX_ASR_PATH = '/asr_xml'
